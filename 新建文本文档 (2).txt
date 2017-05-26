@@ -1,0 +1,110 @@
+/*
+1.HashMap和Hashtable区别
+  Hashtable  线程安全	不准使用null
+  
+  HashMap   线程不安全，性能比Hashtable高一点
+  
+  如果有多条线程访问同一个Map对象时，使用Hashtable实现类会更好
+  
+  2.ArrayList和LinkedList区别
+  1.ArrayList  ：  ArrayList是实现了基于动态数组的数据结构
+     LinkedList：  基于链表的数据结构
+  2.对于随机访问get和set，ArrayList觉得优于LinkedList，
+     因为LinkedList要移动指针。
+  3.对于新增和删除操作add和remove，
+     LinkedList比较占优势，因为ArrayList要移动数据。
+  */
+
+
+  StringBuffer,StringBuilder是可变的
+  3.StringBuffer与StringBuilder区别
+	三者在执行速度放面的比较StringBuilder>StringBuffer>String
+	StringBuffer 允许并发 线程安全 效率低
+	StringBuilder 不允许并发   ------
+ 4 .wait 和 sleep 区别
+	sleep()方法可以在任何地方使用；线程线程类（Thread）的方法调用会暂停此线程指定的时间，但监控依然保持，不会释放对象锁 
+        wait()方法则只能在同步方法或同步块中使用；wait()是Object的方法调用会放弃对象锁，进入等待队列
+
+
+
+java环境变量
+	JAVA_HOME JDK安装路径
+	PATH	在最后 \;%JAVA_HOME%\bin;
+
+
+
+
+//======================================================================================
+
+
+//读取配置信息
+Properties p = system.getProperties();
+p.list(System.out);
+
+properties p = System.getProperties();
+p.list(System.out);
+//枚举类设计颜色
+enum Color{
+	R,G,B;
+	public String tS(){
+		String ret = super.toString();//返回枚举常量的名称，它包含在声明中
+		switch(this){
+			case R:
+				ret = "红色";
+				break;
+			case G:
+				ret = "lan";
+				break;
+			case B:
+				ret = "huang";
+				break;
+			default:
+				ret = "menyou";
+		}
+		return ret;
+	}
+}
+enum C{
+	R,B,G;
+	public String s(){
+		String ret = super.toString();
+		switch(this){
+			case R:;
+			
+		}
+	}
+}
+class Main{
+	
+		
+	}
+}
+
+class Main{
+	public static void main(String [] args){
+		Color[] cl = Color.values();//values将枚举类转换成一个枚举类型的数组
+		for(Color c:cl){
+			System.out.println(c);
+		}
+	}
+}
+enum Color{
+	R,B,G;
+	public String ss(){
+		String ret = super.toString();
+		switch(this){
+			case R:
+				ret = "hong";
+				break;
+			case B:
+				ret = "lan";
+				break;
+			case G:
+				ret = "huang";
+				break;
+			de
+				
+		}
+
+	}
+}
