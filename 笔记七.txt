@@ -1,0 +1,21 @@
+鼠标事件
+
+java语言为处理鼠标事件提供两个接口：MouseListener，MouseMotionListener接口
+事件类（MouseEvent）：
+getX()：鼠标的X坐标
+getY()：鼠标的Y坐标
+getModifiers()：获取鼠标的左键或右键。
+getClickCount()：鼠标被点击的次数。
+getSource()：获取发生鼠标的事件源。
+
+注册监听器的方法：
+addMouseListener(监视器)：加放监视器
+	1.mousePressed(MouseEvent e);// 鼠标按键在组件上按下时调用。
+	2.mouseReleased(MouseEvent e);//鼠标按钮在组件上释放时调用。
+	3.mouseEntered(MouseEvent e);//鼠标进入到组件上时调用。
+	4.mouseExited(MouseEvent e);//鼠标离开组件时调用。
+	5.mouseClicked(MouseEvent e);//鼠标按键在组件上单击（按下并释放）时调用。
+
+
+如果程序希望进一步知道按下或点击的是鼠标左键或右键，鼠标的左键或右键可用InputEvent类中的常量BUTTON1_MASK和BUTTON3_MASK来判定。例如，以下表达式判断是否按下或点击了鼠标右键：
+    e.getModifiers()==InputEvent. BUTTON3_MASK 
