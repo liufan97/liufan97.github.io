@@ -1,21 +1,23 @@
-Êó±êÊÂ¼ş
+é¼ æ ‡äº‹ä»¶
 
-javaÓïÑÔÎª´¦ÀíÊó±êÊÂ¼şÌá¹©Á½¸ö½Ó¿Ú£ºMouseListener£¬MouseMotionListener½Ó¿Ú
-ÊÂ¼şÀà£¨MouseEvent£©£º
-getX()£ºÊó±êµÄX×ø±ê
-getY()£ºÊó±êµÄY×ø±ê
-getModifiers()£º»ñÈ¡Êó±êµÄ×ó¼ü»òÓÒ¼ü¡£
-getClickCount()£ºÊó±ê±»µã»÷µÄ´ÎÊı¡£
-getSource()£º»ñÈ¡·¢ÉúÊó±êµÄÊÂ¼şÔ´¡£
+javaè¯­è¨€ä¸ºå¤„ç†é¼ æ ‡äº‹ä»¶æä¾›ä¸¤ä¸ªæ¥å£ï¼šMouseListenerï¼ŒMouseMotionListeneræ¥å£
+äº‹ä»¶ç±»ï¼ˆMouseEventï¼‰ï¼š
+getX()ï¼šé¼ æ ‡çš„Xåæ ‡
+getY()ï¼šé¼ æ ‡çš„Yåæ ‡
+getModifiers()ï¼šè·å–é¼ æ ‡çš„å·¦é”®æˆ–å³é”®ã€‚
+getClickCount()ï¼šé¼ æ ‡è¢«ç‚¹å‡»çš„æ¬¡æ•°ã€‚
+getSource()ï¼šè·å–å‘ç”Ÿé¼ æ ‡çš„äº‹ä»¶æºã€‚
 
-×¢²á¼àÌıÆ÷µÄ·½·¨£º
-addMouseListener(¼àÊÓÆ÷)£º¼Ó·Å¼àÊÓÆ÷
-	1.mousePressed(MouseEvent e);// Êó±ê°´¼üÔÚ×é¼şÉÏ°´ÏÂÊ±µ÷ÓÃ¡£
-	2.mouseReleased(MouseEvent e);//Êó±ê°´Å¥ÔÚ×é¼şÉÏÊÍ·ÅÊ±µ÷ÓÃ¡£
-	3.mouseEntered(MouseEvent e);//Êó±ê½øÈëµ½×é¼şÉÏÊ±µ÷ÓÃ¡£
-	4.mouseExited(MouseEvent e);//Êó±êÀë¿ª×é¼şÊ±µ÷ÓÃ¡£
-	5.mouseClicked(MouseEvent e);//Êó±ê°´¼üÔÚ×é¼şÉÏµ¥»÷£¨°´ÏÂ²¢ÊÍ·Å£©Ê±µ÷ÓÃ¡£
+æ³¨å†Œç›‘å¬å™¨çš„æ–¹æ³•ï¼š
+addMouseListener(ç›‘è§†å™¨)ï¼šåŠ æ”¾ç›‘è§†å™¨
+	1.mousePressed(MouseEvent e);// é¼ æ ‡æŒ‰é”®åœ¨ç»„ä»¶ä¸ŠæŒ‰ä¸‹æ—¶è°ƒç”¨ã€‚
+	2.mouseReleased(MouseEvent e);//é¼ æ ‡æŒ‰é’®åœ¨ç»„ä»¶ä¸Šé‡Šæ”¾æ—¶è°ƒç”¨ã€‚
+	3.mouseEntered(MouseEvent e);//é¼ æ ‡è¿›å…¥åˆ°ç»„ä»¶ä¸Šæ—¶è°ƒç”¨ã€‚
+	4.mouseExited(MouseEvent e);//é¼ æ ‡ç¦»å¼€ç»„ä»¶æ—¶è°ƒç”¨ã€‚
+	5.mouseClicked(MouseEvent e);//é¼ æ ‡æŒ‰é”®åœ¨ç»„ä»¶ä¸Šå•å‡»ï¼ˆæŒ‰ä¸‹å¹¶é‡Šæ”¾ï¼‰æ—¶è°ƒç”¨ã€‚
 
 
-Èç¹û³ÌĞòÏ£Íû½øÒ»²½ÖªµÀ°´ÏÂ»òµã»÷µÄÊÇÊó±ê×ó¼ü»òÓÒ¼ü£¬Êó±êµÄ×ó¼ü»òÓÒ¼ü¿ÉÓÃInputEventÀàÖĞµÄ³£Á¿BUTTON1_MASKºÍBUTTON3_MASKÀ´ÅĞ¶¨¡£ÀıÈç£¬ÒÔÏÂ±í´ïÊ½ÅĞ¶ÏÊÇ·ñ°´ÏÂ»òµã»÷ÁËÊó±êÓÒ¼ü£º
-    e.getModifiers()==InputEvent. BUTTON3_MASK 
+å¦‚æœç¨‹åºå¸Œæœ›è¿›ä¸€æ­¥çŸ¥é“æŒ‰ä¸‹æˆ–ç‚¹å‡»çš„æ˜¯é¼ æ ‡å·¦é”®æˆ–å³é”®ï¼Œé¼ æ ‡çš„å·¦é”®æˆ–å³é”®å¯ç”¨InputEventç±»ä¸­çš„å¸¸é‡BUTTON1_MASKå’ŒBUTTON3_MASKæ¥åˆ¤å®šã€‚ä¾‹å¦‚ï¼Œä»¥ä¸‹è¡¨è¾¾å¼åˆ¤æ–­æ˜¯å¦æŒ‰ä¸‹æˆ–ç‚¹å‡»äº†é¼ æ ‡å³é”®ï¼š
+    e.getModifiers()==InputEvent. BUTTON3_MASK
+ Â  Â 
+åœ¨äº”å­æ£‹ä¸­æœ‰ä½¿ç”¨
