@@ -1,0 +1,78 @@
+正则表达式是由一个字符序列形成的搜索模式
+
+使用字符串方法
+
+search()函数:
+此函数可以检索与正则表达式相匹配的子字符串。
+返回值是第一个与正则表达式相匹配的子字符串的起始位置，位置是从0开始计算的。如果没有找到返回-1。
+
+replace() 方法 用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。
+//=======================================================================================
+search()函数使用
+
+<button onclick="myFunction()">点我</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var str = "Visit Runoob!"; 
+    var n = str.search("Runoob");
+    document.getElementById("demo").innerHTML = n;
+}
+</script>
+
+//====================================================================================
+replace（）函数使用
+
+<button onclick="myFunction()">点我</button>
+<p id="demo">请访问 Microsoft!</p>
+<script>
+function myFunction() {
+    var str = document.getElementById("demo").innerHTML; 
+    var txt = str.replace(/microsoft/i,"Runoob");
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+//========================================================================================
+
+使用 RegExp 对象
+
+RegExp 对象有 3 个方法：test()、exec() 以及 compile()。
+
+test() 方法检索字符串中的指定值。返回值是 true 或 false。
+
+exec() 方法检索字符串中的指定值。返回值是被找到的值。如果没有发现匹配，则返回 null。
+
+compile() 既可以改变检索模式，也可以添加或删除第二个参数。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
