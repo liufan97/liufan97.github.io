@@ -1,0 +1,50 @@
+MySQL 索引
+MySQL索引的建立对于MySQL的高效运行是很重要的，索引可以大大提高MySQL的检索速度。
+索引分单列索引和组合索引。单列索引，即一个索引只包含单个列，一个表可以有多个单列索引，但这不是组合索引。组合索引，即一个索引包含多个列。
+创建索引时，你需要确保该索引是应用在 SQL 查询语句的条件(一般作为 WHERE 子句的条件)。
+创建索引
+语法：
+create index indexname on mytable(username(length)); 
+
+添加索引
+语法：
+ALTER table tableName ADD INDEX indexName(columnName)
+
+
+唯一索引
+它与前面的普通索引类似，不同的就是：索引列的值必须唯一，但允许有空值。如果是组合索引，则列值的组合必须唯一。它有以下几种创建方式：
+创建索引
+语法：
+CREATE UNIQUE INDEX indexName ON mytable(username(length)) 
+
+修改表结构 
+语法：
+ALTER table mytable ADD UNIQUE [indexName] (username(length))
+
+使用 ALTER 命令添加和删除主键：
+主键只能作用于一个列上，添加主键索引时，你需要确保该主键默认不为空 NOT NULL
+ALTER TABLE testalter_tbl MODIFY i INT NOT NULL;
+
+ALTER TABLE testalter_tbl ADD PRIMARY KEY (i);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

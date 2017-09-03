@@ -1,0 +1,49 @@
+增加数据：
+
+insert into 表名（‘字段名’） values（'');
+或
+insert into 表名（‘字段名’） value（'');
+value只可以添加一个数据，values可加多个；
+
+表2的数据插入表1：
+
+insert into 表1 select * from 表2；
+
+删除数据：
+
+delete from 表名 where 条件；
+
+修改数据：
+
+update 表名 set 字段 = 值 where 条件；
+
+创建表：
+create table 表名（
+	列名 数据类型（长度）
+）engine = myisam default charset = utf8；（有外键时engine = innodb）
+
+主键：	primary key
+外键：	foreign key（字段名） references 主表名（外键名）
+非空：	not null
+唯一：	unique
+默认：	default 值
+自动增加：	auto_incremen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

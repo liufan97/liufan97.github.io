@@ -1,0 +1,52 @@
+MySQL 查询数据
+语法：
+SELECT * FROM a
+[WHERE Clause]
+[GROUP BY ...]
+[HAVING ...]
+[ORDER BY ...]
+[LIMIT ...]
+
+基本查询语句：
+查询全部：	select * from 表名；
+查询指定：	select 字段名 from 表名；
+查询多个： 	select 字段名1，字段名2 from 表名；
+
+条件查询：	select * from 表名 where 查询条件；
+and	并且
+or 	或
+not	非
+in	等于
+is null	为空
+
+group by 分组查询；
+	group by 字段 [having]条件表达式
+	group_concat（）将每个分组中各个字段的值显示出来
+
+Limit [偏移位置量，]查询数
+
+连接查询：
+语法：select * from 表1 join 表2 on 表1.。。。 = 表2.。。。；
+
+子查询：
+语法：
+select * from 表1 where 条件（select id from 表2）；
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

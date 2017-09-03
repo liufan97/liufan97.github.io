@@ -1,0 +1,34 @@
+JSP 技术是以 Java 语言作为脚本语言的，JSP 网页为整个服务器端的 Java 库单元提供了一个接口来服务于HTTP的应用程序。
+JSP文件后缀名为 *.jsp 
+
+例如：
+<html>
+    <head>
+           <title>第一个 JSP 程序</title>
+    </head>
+    <body>
+           <%
+                  out.println("Hello World！");
+           %>
+    </body>
+</html>
+
+jsp是什么：
+
+JSP全称Java Server Pages，是一种动态网页开发技术。它使用JSP标签在HTML网页中插入Java代码。标签通常以<%开头以%>结束。 
+JSP是一种Java servlet，主要用于实现Java web应用程序的用户界面部分。网页开发者们通过结合HTML代码、XHTML代码、XML元素以及嵌入JSP操作和命令来编写JSP。 
+JSP通过网页表单获取用户输入数据、访问数据库及其他数据源，然后动态地创建网页。 
+JSP标签有多种功能，比如访问数据库、记录用户选择信息、访问JavaBeans组件等，还可以在不同的网页中传递控制信息和共享信息。 
+
+
+JSP的优势 ：
+
+以下列出了使用JSP带来的其他好处：
+与ASP相比：JSP有两大优势。首先，动态部分用Java编写，而不是VB或其他MS专用语言，所以更加强大与易用。第二点就是JSP易于移植到非MS平台上。
+与纯 Servlet 相比：JSP可以很方便的编写或者修改HTML网页而不用去面对大量的println语句。
+与SSI相比：SSI无法使用表单数据、无法进行数据库链接。
+与JavaScript相比：虽然JavaScript可以在客户端动态生成HTML，但是很难与服务器交互，因此不能提供复杂的服务，比如访问数据库和图像处理等等。
+与静态HTML相比：静态HTML不包含动态信息。
+
+
+
